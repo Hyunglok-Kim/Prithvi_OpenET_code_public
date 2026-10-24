@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or the models, please cite the article below."
+title: "Prithvi-OpenET: inference code and examples"
+version: "1.0.0"
+date-released: "TODO YYYY-MM-DD"
+doi: "TODO 10.5281/zenodo.XXXXXXX"
+license: "Apache-2.0"
+repository-code: "https://github.com/Hyunglok-Kim/Prithvi_OpenET_code_public"
+authors:
+  - family-names: Choi
+    given-names: Euiyoung
+    affiliation: "Gwangju Institute of Science and Technology"
+  - family-names: Kim
+    given-names: Seulgi
+    affiliation: "Gwangju Institute of Science and Technology"
+  - family-names: Kim
+    given-names: Hyunglok
+    affiliation: "Gwangju Institute of Science and Technology"
+preferred-citation:
+  type: article
+  title: "Prithvi-OpenET: Geospatial Foundation Model-Based 30 m Monthly Evapotranspiration Estimation beyond the Conterminous United States with Landsat and Sentinel-2 Imagery"
+  authors:
+    - family-names: Choi
+      given-names: Euiyoung
+    - family-names: Kim
+      given-names: Seulgi
+    - family-names: Kim
+      given-names: Hyunglok
+  journal: "Remote Sensing of Environment"
+  year: TODO
+  doi: "TODO"

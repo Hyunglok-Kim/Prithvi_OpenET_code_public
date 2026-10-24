@@ -1,0 +1,39 @@
+Prithvi-OpenET v1
+Copyright 2026 Euiyoung Choi, Seulgi Kim, Hyunglok Kim (Gwangju Institute of Science and Technology)
+
+Licenses in this repository
+- prithvi_openet/, scripts/ and the notebooks: Apache License 2.0 (LICENSE)
+- examples/*.npz: Creative Commons Attribution-NonCommercial 4.0 (LICENSES/CC-BY-NC-4.0.txt), plus the source terms
+  in examples/DATA_NOTICE.md
+- documentation: CC BY 4.0 (LICENSES/CC-BY-4.0.txt)
+- Model weights are not in this repository. They are archived on Zenodo (DOI in README.md) under CC BY-NC 4.0.
+
+Third-party components and data
+
+1. Prithvi-EO-2.0-300M-TL (IBM and NASA), Apache License 2.0 (Szwarcman et al. 2025, arXiv:2412.02732).
+   The Prithvi-OpenET weights (prithvi_openet_opt*) do not include the encoder: it is used unchanged and is downloaded
+   from Hugging Face (ibm-nasa-geospatial/Prithvi-EO-2.0-300M-TL, revision 63adbd39c271da4c42f447e69b1a7c91a338cdc9)
+   under its own Apache License 2.0. The Prithvi-OpenET-Tower weights (prithvi_openet_tower_*) include an encoder
+   derived from Prithvi-EO-2.0-300M-TL by fine-tuning on flux-tower observations.
+
+2. Copernicus DEM GLO-30. Elevation and clear-sky shortwave radiation in the example
+   chips were produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus
+   Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and
+   ESA; all rights reserved. The organisations in charge of the Copernicus programme by
+   law or by delegation do not incur any liability for any use of the Copernicus
+   WorldDEM-30.
+
+3. MERIT Hydro v1.0.1 (Yamazaki et al. 2019), CC BY-NC 4.0. The topographic wetness index
+   input of the Opt.+F+E models derives from MERIT Hydro; for this reason the model weights
+   (all six models, for consistent terms) and the example chips are released for
+   non-commercial use.
+
+4. OpenET Collection v2.1 (Earth Engine assets, CC BY 4.0). The models were trained on these
+   labels; the labels themselves are not redistributed.
+
+5. FLUXNET-1F data (CC BY 4.0), obtained with the FLUXNET Shuttle, were used to adapt the Prithvi-OpenET-Tower models.
+   Acknowledgment (FLUXNET data policy): "FLUXNET data products were produced and harmonized by eddy covariance
+   regional networks and data processing centers, including AmeriFlux, ChinaFlux, European Fluxes Database, ICOS,
+   JapanFlux, KoFlux, OzFlux, SAEON, and TERN. These products also include a modified version of ERA5 hourly data
+   provided by the Copernicus Climate Change Service." Reference: Pastorello et al. (2020), Sci Data 7, 225,
+   https://doi.org/10.1038/s41597-020-0534-3.
