@@ -1,4 +1,4 @@
-# Prithvi_ET_code_public
+# Prithvi_OpenET_code_public
 
 Public code release accompanying the manuscript
 
